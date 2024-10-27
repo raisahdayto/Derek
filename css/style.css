@@ -991,6 +991,7 @@ ol {
 .pagination__links {
 	text-align: center;
 	padding-top: 10px;
+	border-radius: 10px;
 }
 
 .pagination__links.blog__pagination {
@@ -1010,6 +1011,7 @@ ol {
 	margin-right: 6px;
 	margin-bottom: 5px;
 	padding: 14px 22px 12px;
+	border-radius: 10px;
 }
 
 .pagination__links a:last-child {
