@@ -7,6 +7,7 @@
     <meta name="keywords" content="Derek Collin's Art, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.png" type="favicon.png">
     <title>Derek Collin's Art</title>
 
     <!-- Google Font -->
@@ -196,7 +197,7 @@
     </footer>
     <!-- Footer Section End -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to load page content
             function loadPage(url) {
                 $("#main-content").load(url + " #main-content > *");
@@ -206,7 +207,7 @@
             loadPage("home.html");
 
             // Handle clicks on nav links
-            $(".nav-link").on("click", function(e) {
+            $(".nav-link").on("click", function (e) {
                 e.preventDefault(); // Prevent default link behavior
                 const url = $(this).attr("href");
                 loadPage(url); // Load the selected page content
@@ -214,7 +215,7 @@
             });
 
             // Handle back/forward navigation
-            window.onpopstate = function() {
+            window.onpopstate = function () {
                 loadPage(location.pathname);
             };
         });
